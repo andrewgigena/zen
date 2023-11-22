@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen de Python</title>
+    <style>
+      body {
+        background-color: #1a1a1a;
+        color: #fff;
+        font-family: sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 80%;
+        margin: auto;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 40px;
+      }
+
+      .principle {
+        background-color: #333;
+        padding: 0.2rem 2rem 0.2rem 2rem;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+
+      .principle h2 {
+        color: #4CAF50;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        position: relative;
+        /* Necesario para posicionar el pseudoelemento */
+        margin-left: 2rem;
+      }
+
+      .principle h2:hover {
+        color: #66ff66;
+      }
+
+      .principle h2::before {
+        content: '☰';
+        position: absolute;
+        left: -2rem;
+        /* Ajusta según la necesidad */
+        transition: transform 0.3s ease;
+      }
+
+      .principle h2.open::before {
+        content: '✖';
+      }
+
+      .best-practice {
+        background-color: #444;
+        padding: 10px;
+        border-left: 3px solid #4CAF50;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Zen de Python</h1>
+      <section class="principle">
+        <h2>Lo bello es mejor que lo feo</h2>
+        <p class="explanation">Este principio enfatiza la importancia de escribir código que sea estéticamente agradable y claro. El código se lee más a menudo de lo que se escribe, por lo que hacerlo legible y visualmente comprensible es importante.</p>
+        <p class="best-practice">Mejor Práctica: Utiliza nombres de variables claros y descriptivos y mantén un estilo de codificación consistente.</p>
+      </section>
+      <section class="principle">
+        <h2>Lo explícito es mejor que lo implícito</h2>
+        <p class="explanation"> El código debe ser lo más transparente y autoexplicativo posible.</p>
+        <p class="best-practice">Mejor Práctica: Evita comportamientos ocultos y documenta tu código claramente para asegurar que su funcionalidad sea evidente.</p>
+      </section>
+      <section class="principle">
+        <h2>Lo simple es mejor que lo complejo</h2>
+        <p class="explanation"> El código simple es más fácil de mantener, probar y entender que el código complejo.</p>
+        <p class="best-practice">Mejor Práctica: Descompone problemas complejos en partes más simples y evita abstracciones innecesarias.</p>
+      </section>
+      <section class="principle">
+        <h2>Lo complejo es mejor que lo complicado</h2>
+        <p class="explanation"> Cuando la complejidad es necesaria, debe ser manejable y no llevar a complicaciones internas.</p>
+        <p class="best-practice">Mejor Práctica: Estructura tu código lógicamente y evita entrelazar aspectos no relacionados.</p>
+      </section>
+      <section class="principle">
+        <h2>Lo plano es mejor que lo anidado</h2>
+        <p class="explanation"> Las estructuras profundamente anidadas pueden volverse confusas y difíciles de seguir.</p>
+        <p class="best-practice">Mejor Práctica: Aplana tus estructuras de código donde sea posible, usando bucles y funciones para evitar anidaciones profundas.</p>
+      </section>
+      <section class="principle">
+        <h2>Lo disperso es mejor que lo denso</h2>
+        <p class="explanation"> El código comprimido en menos líneas puede ser más difícil de leer.</p>
+        <p class="best-practice">Mejor Práctica: Utiliza el espacio en blanco eficazmente para separar secciones lógicas de código.</p>
+      </section>
+      <section class="principle">
+        <h2>La legibilidad cuenta</h2>
+        <p class="explanation"> El código se lee más a menudo de lo que se escribe, por lo que la legibilidad es crucial.</p>
+        <p class="best-practice">Mejor Práctica: Escribe código que sea fácil de leer, con comentarios donde sea necesario para explicar partes complejas.</p>
+      </section>
+      <section class="principle">
+        <h2>Los casos especiales no son lo suficientemente especiales como para romper las reglas</h2>
+        <p class="explanation"> Incluso en situaciones únicas, generalmente se deben seguir las pautas.</p>
+        <p class="best-practice">Mejor Práctica: Sigue los estándares de codificación establecidos y patrones, incluso al tratar con casos inusuales.</p>
+      </section>
+      <section class="principle">
+        <h2>Aunque la practicidad le gana a la pureza</h2>
+        <p class="explanation"> Mientras que la pureza teórica es un ideal, las soluciones prácticas de trabajo a menudo son más valiosas.</p>
+        <p class="best-practice">Mejor Práctica: Sé pragmático; a veces una solución imperfecta que funciona es mejor que una idealizada que no lo hace.</p>
+      </section>
+      <section class="principle">
+        <h2>Los errores nunca deben pasar silenciosamente</h2>
+        <p class="explanation"> Ignorar u ocultar errores puede llevar a problemas mayores a largo plazo.</p>
+        <p class="best-practice">Mejor Práctica: Maneja las excepciones y errores explícitamente, y regístralos adecuadamente.</p>
+      </section>
+      <section class="principle">
+        <h2>A menos que se silencien explícitamente</h2>
+        <p class="explanation"> En casos donde estés seguro de que un error puede ser ignorado de forma segura, debe ser una decisión intencional.</p>
+        <p class="best-practice">Mejor Práctica: Silencia los errores solo con documentación clara y justificación.</p>
+      </section>
+      <section class="principle">
+        <h2>Ante la ambigüedad, rechaza la tentación de adivinar</h2>
+        <p class="explanation"> Evita hacer suposiciones cuando el comportamiento del código no está claro.</p>
+        <p class="best-practice">Mejor Práctica: Busca claridad en la lógica de tu código y evita las suposiciones, especialmente en condiciones complejas.</p>
+      </section>
+      <section class="principle">
+        <h2>Debe haber una -- y preferiblemente solo una -- manera obvia de hacerlo</h2>
+        <p class="explanation"> La mejor solución a menudo es la más directa y menos sorprendente.</p>
+        <p class="best-practice">Mejor Práctica: Elige métodos claros y convencionales sobre los ingeniosos u oscuros.</p>
+      </section>
+      <section class="principle">
+        <h2>Aunque esa manera puede no ser obvia al principio a menos que seas holandés</h2>
+        <p class="explanation"> Esto es una referencia humorística a Guido van Rossum, el creador holandés de Python. A veces, la mejor solución puede no ser inmediatamente aparente.</p>
+        <p class="best-practice">Mejor Práctica: Invierte tiempo en aprender y entender los modismos de Python y la forma Pythonic de hacer las cosas.</p>
+      </section>
+      <section class="principle">
+        <h2>Ahora es mejor que nunca</h2>
+        <p class="explanation"> La procrastinación puede ser perjudicial. Es mejor escribir un código imperfecto ahora que puede mejorarse más tarde que esperar una solución perfecta.</p>
+        <p class="best-practice">Mejor Práctica: Comienza a codificar e itera en tus soluciones.</p>
+      </section>
+      <section class="principle">
+        <h2>Aunque nunca es a menudo mejor que ahora mismo</h2>
+        <p class="explanation"> Sin embargo, precipitarse en una solución sin una planificación adecuada puede llevar a problemas.</p>
+        <p class="best-practice">Mejor Práctica: Equilibra la necesidad de progreso con una planificación y diseño reflexivos.</p>
+      </section>
+      <section class="principle">
+        <h2>Si la implementación es difícil de explicar, es una mala idea</h2>
+        <p class="explanation"> Si no puedes explicar fácilmente cómo funciona tu código, probablemente sea demasiado complejo.</p>
+        <p class="best-practice">Mejor Práctica: Apunta a implementaciones que puedan ser fácilmente explicadas y entendidas.</p>
+      </section>
+      <section class="principle">
+        <h2>Si la implementación es fácil de explicar, puede ser una buena idea</h2>
+        <p class="explanation"> La simplicidad y claridad generalmente indican un enfoque sólido.</p>
+        <p class="best-practice">Mejor Práctica: Prefiere soluciones que sean sencillas y comunicables.</p>
+      </section>
+      <section class="principle">
+        <h2>Los espacios de nombres son una idea fantástica -- ¡hagamos más de esos!</h2>
+        <p class="explanation"> Los espacios de nombres ayudan a prevenir conflictos de nombres y hacen que el código sea más claro.</p>
+        <p class="best-practice">Mejor Práctica: Utiliza espacios de nombres para organizar tu código y evitar colisiones de nombres.</p>
+      </section>
+      <!-- Repite la estructura de la sección para cada principio del Zen de Python -->
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const principles = document.querySelectorAll('.principle');
+        principles.forEach(principle => {
+          const heading = principle.querySelector('h2');
+          const explanation = principle.querySelector('.explanation');
+          const bestPractice = principle.querySelector('.best-practice');
+          // Ocultar inicialmente el contenido
+          explanation.style.display = 'none';
+          bestPractice.style.display = 'none';
+          heading.addEventListener('click', function() {
+            const isExplanationHidden = explanation.style.display === 'none';
+            explanation.style.display = isExplanationHidden ? 'block' : 'none';
+            bestPractice.style.display = isExplanationHidden ? 'block' : 'none';
+            if (isExplanationHidden) {
+              heading.classList.add('open');
+            } else {
+              heading.classList.remove('open');
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
